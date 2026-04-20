@@ -1,6 +1,6 @@
 # CuffsX
 
-CuffsX is a Fabric mod for 1.20.1 that adds a handcuff system for player control, administration, and roleplay scenarios.
+CuffsX is a Fabric mod for that adds a handcuff system for player control, administration, and roleplay scenarios.
 
 ## ✨ Features
 - Two types of handcuffs: hands and legs
