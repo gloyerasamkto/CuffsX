@@ -313,7 +313,23 @@ public class Cuffsx implements ModInitializer {
                     CuffManager.removeCuffsForced(player, type);
                 }
             }
+            // Если умерший был ведомым — снимаем поводок
             LeashManager.detachByLeashed(player.getUuid());
+            // Если умерший был ведущим — снимаем поводок с ведомого и уведомляем его
+            UUID leashedByDead = LeashManager.getLeashed(player.getUuid());
+            if (leashedByDead != null) {
+                ServerPlayerEntity leashed = player.getServer().getPlayerManager().getPlayer(leashedByDead);
+                if (leashed != null) {
+                    leashed.sendMessage(Text.literal("§eИгрок ведущий вас умер."), false);
+                    // Обновляем lockedPos чтобы ведомый остался на месте
+                    CuffState ls = CuffState.getOrCreate(player.getServer());
+                    for (CuffType t : CuffType.values()) {
+                        if (ls.hasCuff(leashedByDead, t))
+                            ls.updateLockedPos(leashedByDead, t, leashed.getPos());
+                    }
+                }
+                LeashManager.detachByHolder(player.getUuid());
+            }
             return true;
         });
     }

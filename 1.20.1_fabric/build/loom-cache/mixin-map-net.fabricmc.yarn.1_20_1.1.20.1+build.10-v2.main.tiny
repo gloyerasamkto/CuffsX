@@ -1,0 +1,2 @@
+v1	named	intermediary
+FIELD	org/gloyer057/cuffsx/mixin/PlayerScreenHandlerMixin	Lnet/minecraft/entity/player/PlayerEntity;	owner	field_7828

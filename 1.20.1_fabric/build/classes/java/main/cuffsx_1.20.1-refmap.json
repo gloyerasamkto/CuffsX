@@ -1,0 +1,26 @@
+{
+  "mappings": {
+    "org/gloyer057/cuffsx/mixin/LivingEntityJumpMixin": {
+      "jump": "Lnet/minecraft/class_1309;method_6043()V"
+    },
+    "org/gloyer057/cuffsx/mixin/PlayerScreenHandlerMixin": {
+      "canInsertIntoSlot": "Lnet/minecraft/class_1723;method_7613(Lnet/minecraft/class_1799;Lnet/minecraft/class_1735;)Z"
+    },
+    "org/gloyer057/cuffsx/mixin/ServerPlayerEntityMixin": {
+      "attack": "Lnet/minecraft/class_1657;method_7324(Lnet/minecraft/class_1297;)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "org/gloyer057/cuffsx/mixin/LivingEntityJumpMixin": {
+        "jump": "Lnet/minecraft/class_1309;method_6043()V"
+      },
+      "org/gloyer057/cuffsx/mixin/PlayerScreenHandlerMixin": {
+        "canInsertIntoSlot": "Lnet/minecraft/class_1723;method_7613(Lnet/minecraft/class_1799;Lnet/minecraft/class_1735;)Z"
+      },
+      "org/gloyer057/cuffsx/mixin/ServerPlayerEntityMixin": {
+        "attack": "Lnet/minecraft/class_1657;method_7324(Lnet/minecraft/class_1297;)V"
+      }
+    }
+  }
+}

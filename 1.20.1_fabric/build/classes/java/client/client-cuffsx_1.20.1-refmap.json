@@ -1,0 +1,26 @@
+{
+  "mappings": {
+    "org/gloyer057/cuffsx/mixin/client/ClientPlayerEntityMixin": {
+      "isCamera": "Lnet/minecraft/class_746;method_3134()Z"
+    },
+    "org/gloyer057/cuffsx/mixin/client/LivingEntityRendererAccessor": {
+      "addFeature": "method_4046(Lnet/minecraft/class_3887;)Z"
+    },
+    "org/gloyer057/cuffsx/mixin/client/PlayerEntityRendererMixin": {
+      "<init>": "Lnet/minecraft/class_1007;<init>(Lnet/minecraft/class_5617$class_5618;Z)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "org/gloyer057/cuffsx/mixin/client/ClientPlayerEntityMixin": {
+        "isCamera": "Lnet/minecraft/class_746;method_3134()Z"
+      },
+      "org/gloyer057/cuffsx/mixin/client/LivingEntityRendererAccessor": {
+        "addFeature": "method_4046(Lnet/minecraft/class_3887;)Z"
+      },
+      "org/gloyer057/cuffsx/mixin/client/PlayerEntityRendererMixin": {
+        "<init>": "Lnet/minecraft/class_1007;<init>(Lnet/minecraft/class_5617$class_5618;Z)V"
+      }
+    }
+  }
+}
